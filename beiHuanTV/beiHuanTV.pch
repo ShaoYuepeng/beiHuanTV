@@ -1,0 +1,33 @@
+//
+//  beiHuanTV.pch
+//  beiHuanTV
+//
+//  Created by 丫了个P on 16/1/3.
+//  Copyright © 2016年 邵岳鹏. All rights reserved.
+//
+
+// OC文件
+#ifdef __OBJC__
+
+#import "UIView+Frame.h"
+
+#import "UIImage+Image.h"
+
+#import "UIBarButtonItem+Item.h"
+
+
+// 自定义Log
+
+#ifdef DEBUG
+// 调试阶段 DEBUG
+#define BHLog(...) NSLog(__VA_ARGS__)
+
+#else
+// 发布阶段
+#define BHLog(...)
+
+#endif
+
+#define BHFunc BHLog(@"%s",__func__)
+
+#endif
